@@ -1,0 +1,6 @@
+﻿fever,mild to high fever,cough(with green yellow or bloody mucus),pneumonia
+ladder step fever, abdominal pain, constipation, diarrhoea,lethargy,red spots on abdomen,typhoid
+high grade fever,shivering,fatigue,malaria
+visual phenomenon such as seeing flashes of light or shapes etc,pain on one or both sides of head, pain that feels throbbing or pulsing,extreme sensitivity,nausea & vomiting,blurred vision,dizziness sometimes followed by fainting,migraine
+abdominal pain,diarrrhoea,vomiting,bloody stools,fever,dehydrated,Gastroentritis
+coughing,a wheezing or whistling sound when breathing,trouble breathing,Asthama

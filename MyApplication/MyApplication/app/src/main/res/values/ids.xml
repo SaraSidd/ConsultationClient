@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="editTextName" type="id" />
+    <item name="editTextAge" type="id" />
+    <item name="editTextGender" type="id" />
+    <item name="editTextQualification" type="id" />
+    <item name="editTextCnic" type="id" />
+    <item name="editTextEmail" type="id" />
+    <item name="editTextPassword" type="id" />
+    <item name="editTextMobile" type="id" />
+    <item name="editTextAddress" type="id" />
+    <item name="menuLogout" type="id" />
+    <item name="editTextDays" type="id" />
+    <item name="editTextTiming" type="id" />
+    <item name="editTextSpeciality" type="id" />
+</resources>

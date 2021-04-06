@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.consultation.myapplication">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="net.simplifiedcoding.androidgcm.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.example.consultation.myapplication.helper.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.consultation.myapplication.Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- GCM Receiver -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.gnirt69.gcmexample" />
+            </intent-filter>
+        </receiver>
+
+        <!-- GCM Receiver Service -->
+        <service
+            android:name="com.example.consultation.myapplication.gcm.GCMPushReceiverService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <!-- GCM Registration Intent Service -->
+        <service
+            android:name="com.example.consultation.myapplication.gcm.GCMRegistrationIntentService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.example.consultation.myapplication.activities.ChatRoomActivity" />
+        <activity android:name="com.example.consultation.myapplication.activities.fileUpload" />
+        <activity android:name="com.example.consultation.myapplication.download" />
+        <activity android:name="com.example.consultation.myapplication.down" />
+        <activity android:name="com.example.consultation.myapplication.UserDesk" />
+        <activity android:name="com.example.consultation.myapplication.Register" />
+        <activity
+            android:name="com.example.consultation.myapplication.DoctorDesk"
+            android:label="DoctorDesk" />
+        <activity
+            android:name="com.example.consultation.myapplication.MainActivity"
+            android:label="MainActivity" />
+        <activity
+            android:name="com.example.consultation.myapplication.Userlogin"
+            android:label="Userlogin" />
+        <activity android:name="com.example.consultation.myapplication.pharmacy" />
+        <activity android:name="com.example.consultation.myapplication.DiseaseRecommender" />
+        <activity android:name="com.example.consultation.myapplication.Uprofile" />
+        <activity android:name="com.example.consultation.myapplication.consultation" />
+        <activity android:name="com.example.consultation.myapplication.UserRegister" />
+        <activity android:name="com.example.consultation.myapplication.SpeechToText" />
+        <activity android:name="com.example.consultation.myapplication.fileUpload" />
+        <activity android:name="com.example.consultation.myapplication.Dprofile" />
+        <activity android:name="com.example.consultation.myapplication.chatroom"></activity>
+    </application>
+
+</manifest>

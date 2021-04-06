@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/activity_logged"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.consultation.myapplication.UserDesk">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="186dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="Consultation!"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/spinner4"
+                android:layout_marginTop="20dp"
+                android:hint="Select Doctor: "
+                android:textColorHint="#137FF3"
+                android:textSize="22dp" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2"
+                android:textColor="#000"
+                android:id="@+id/spinner3"/>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:text="Please enter details and symptoms of your condition."
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#D3D3D3"
+                android:textColor="#000"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/editText" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="20dp"
+                android:background="#137FF3"
+                android:text="Send Request"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"
+                android:background="#137FF3"
+                android:text="Chat Room"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
